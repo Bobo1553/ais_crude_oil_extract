@@ -1,0 +1,30 @@
+[db]
+source_path=E:\shipsDB\ShipsDB-2016
+source_table=Tracks
+target_db=D:\graduation\data\test\OilTanker.db
+
+[ais]
+target_table=OilTanker
+rol_list=mmsi INTEGER; imo INTEGER; vessel_name TEXT; callsign TEXT; vessel_type TEXT; vessel_type_code INTEGER; vessel_type_cargo TEXT; vessel_class TEXT; length INTEGER; width INTEGER; flag_country TEXT; flag_code INTEGER; destination TEXT; eta INTEGER; draft DOUBLE; longitude DOUBLE; latitude DOUBLE; sog DOUBLE; cog DOUBLE; rot DOUBLE; heading INTEGER; nav_status TEXT; nav_status_code INTEGER; source TEXT; ts_pos_utc INTEGER; ts_static_utc INTEGER; dt_pos_utc TEXT; dt_static_utc TEXT; vessel_type_main TEXT; vessel_type_sub TEXT
+
+[draft]
+target_table=TankerDraft
+rol_list=mmsi INTEGER; draft DOUBLE; count INTEGER
+state_table=TankerDraftState
+state_rol_list=mmsi INTEGER; draft DOUBLE; count INTEGER; load_state INTEGER
+
+[data_cleaning]
+is_need_cleaning=False
+speed_threshold=40
+draft_threshold=100
+
+[trajectory]
+output_header=mmsi; imo; vessel_name; vessel_type; length; width; longtitude; latitude; draft; speed; utc; source_port; target_port; load_state; line_index
+output_file=D:\graduation\data\test\result\trajectory.csv
+china_output_file=D:\graduation\data\test\result\china_trajectory.csv
+distance_threshold=3.4
+speed_threshold=40
+
+[port]
+port_name=D:\GeoData\Port\WPI.shp
+search_distance=1000

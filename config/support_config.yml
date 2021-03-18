@@ -1,0 +1,8 @@
+[db]
+source_path=E:\NewShipsDB2017
+source_table=Tracks
+target_db=D:\graduation\data\SupportDB.db
+
+[ship]
+target_table=shipMMSI2017
+rol_list=mmsi INTEGER; vessel_type TEXT

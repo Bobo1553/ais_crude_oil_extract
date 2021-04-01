@@ -18,10 +18,10 @@ def get_draft_count_and_load_identify(source_db, ais_table, target_db, draft_tab
 
 
 if __name__ == '__main__':
-    source_db = r"D:\graduation\data\step_result\total\step2\OilTanker.db"
-    ais_table = "OilTanker"
-    target_db = r"D:\graduation\data\step_result\total\step3\TankerDraft.db"
-    draft_table = "TankerDraft"
+    source_db = r"D:\graduation\data\step_result\step2\CrudeOilTanker.db"
+    ais_table = "CrudeOilTanker"
+    target_db = r"D:\graduation\data\step_result\step3\CrudeOilTankerDraft.db"
+    draft_table = "CrudeOilTankerDraft"
     draft_rol_list = ["mmsi INTEGER", "mark INTEGER", "draft DOUBLE", "count INTEGER"]
     draft_state_table = "TankerDraftState"
     draft_state_rol_list = ["mmsi INTEGER", "mark INTEGER", "draft DOUBLE", "count INTEGER", "load_state INTEGER"]

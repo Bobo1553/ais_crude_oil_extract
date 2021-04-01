@@ -64,8 +64,8 @@ class AISService(object):
         return self.ais_point
 
     def start_fetch_original_data_transaction(self, source_table):
-        self.ais_db.run_sql("SELECT mmsi, imo, vessel_name, vessel_type, length, width, longitude, latitude, "
-                            "draft, speed, utc FROM {} ORDER BY mmsi, utc ".format(source_table))
+        self.ais_db.run_sql("SELECT mmsi, imo, vessel_name, vessel_type_sub, length, width, flag_country, longitude, "
+                            "latitude, draft, speed, utc FROM {} ORDER BY mmsi, utc ".format(source_table))
         row = self.ais_db.db_cursor.next()
         self.ais_point = AISPoint(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], float(row[9]),
                                   row[10])
@@ -222,11 +222,3 @@ class AISService(object):
             for ship_point in sequentially[i]:
                 ship_point.set_mark(i)
                 csv_writer.writerow(ship_point.export_to_csv())
-
-
-if __name__ == '__main__':
-    Config.parse_from_file("../config/config.yml")
-    ais = AISService(Config.target_db)
-    ais.import_data_from_path(Config.source_path, Config.source_table, Config.ais_table, Config.ais_rol_list)
-    if Config.is_need_cleaning:
-        ais.clean_dirty_data(Config.ais_table, Config.speed_threshold, Config.draft_threshold)

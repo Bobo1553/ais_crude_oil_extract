@@ -9,7 +9,8 @@ from service.aisservice import AISService
 from util.Utils import Utils
 
 """
-
+1. identify the ship shared with the same MMSI
+2. add the mark attribute
 
 TODO check 
 """
@@ -17,6 +18,18 @@ TODO check
 
 def shared_mmsi_identify(source_db, source_table, speed_threshold, distance_threshold, point_percent, output_ais_csv,
                          output_header):
+    """
+    identify the situation of the shared MMSI, consider the speed, distance threshold, and delete the the ship which
+    point is less than the point_threshold
+    :param source_db: the database file of the original data
+    :param source_table: the table name of the original data in the database file
+    :param speed_threshold: the threshold of speed to identify whether the same ship
+    :param distance_threshold: the threshold of distance to identify whether the same ship
+    :param point_percent: delete the ship with the point less than the percent threshold
+    :param output_ais_csv: the .csv file of the output data
+    :param output_header: the header in the .csv file
+    :return: None
+    """
     Utils.check_file_path(output_ais_csv)
 
     ais = AISService(source_db)
@@ -111,21 +124,36 @@ def check_result_count(output_ais_csv):
     print(count)
 
 
+def check_file(filename):
+    with open(filename) as trajectory_file:
+        file_reader = csv.reader(trajectory_file)
+        with open(filename.replace(".csv", "_test.csv", ), "wb") as test_file:
+            test_writer = csv.writer(test_file)
+            test_writer.writerow(next(file_reader))
+            test_writer.writerow(next(file_reader))
+            test_writer.writerow(next(file_reader))
+            test_writer.writerow(next(file_reader))
+            test_writer.writerow(next(file_reader))
+            test_writer.writerow(next(file_reader))
+            test_writer.writerow(next(file_reader))
+            test_writer.writerow(next(file_reader))
+            test_writer.writerow(next(file_reader))
+
+
 if __name__ == '__main__':
-    source_db = r"D:\graduation\data\step_result\total\step1\OilTankerTemp.db"
-    source_table = "OilTanker"
+    source_db = r"D:\graduation\data\step_result\step1\CrudeOilTankerTemp.db"
+    source_table = "CrudeOilTanker"
     speed_threshold = 18
     distance_threshold = 3.4
     point_percent = 0.1
-    output_ais_csv = r"D:\graduation\data\step_result\total\step2\OilTanker2016.csv"
-    output_header = ["mmsi", "mark", "imo", "vessel_name", "vessel_type", "length", "width", "longitude", "latitude",
-                     "draft", "speed", "utc"]
+    output_ais_csv = r"D:\graduation\data\step_result\step2\CrudeOilTanker.csv"
+    output_header = ["mmsi", "mark", "imo", "vessel_name", "vessel_type", "length", "width", "country", "longitude",
+                     "latitude", "draft", "speed", "date", "utc"]
 
-    # shared_mmsi_identify(source_db, source_table, speed_threshold, distance_threshold, point_percent, output_ais_csv,
-    #                      output_header)
-
+    shared_mmsi_identify(source_db, source_table, speed_threshold, distance_threshold, point_percent, output_ais_csv,
+                         output_header)
+    # check_file(output_ais_csv)
     # check_result(output_ais_csv)
-
     # check_txt_file(output_ais_csv)
-
-    check_result_count(output_ais_csv)
+    # check_result_count(output_ais_csv)
+    print("finish!!!!")

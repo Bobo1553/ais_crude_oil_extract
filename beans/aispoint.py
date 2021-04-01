@@ -10,7 +10,8 @@ from util.Utils import Utils
 
 class AISPoint(object):
 
-    def __init__(self, mmsi, imo, vessel_name, vessel_type, length, width, longitude, latitude, draft, speed, str_time,
+    def __init__(self, mmsi, imo, vessel_name, vessel_type, length, width, country, longitude, latitude, draft, speed,
+                 str_time,
                  mark=0):
         self.mmsi = mmsi
         self.mark = mark
@@ -22,6 +23,7 @@ class AISPoint(object):
         self.vessel_type = vessel_type
         self.length = length
         self.width = width
+        self.country = country
         self.longitude = longitude
         self.latitude = latitude
         self.draft = draft
@@ -31,16 +33,16 @@ class AISPoint(object):
 
     def export_to_csv(self):
         return [self.mmsi, self.mark, self.imo, self.vessel_name, self.vessel_type, self.length, self.width,
-                self.longitude, self.latitude, self.draft, self.speed, self.date, self.utc]
+                self.country, self.longitude, self.latitude, self.draft, self.speed, self.date, self.utc]
 
     def is_same_ship(self, another_ship_point):
         return self.mmsi == another_ship_point.mmsi and self.mark == another_ship_point.mark
 
     def __str__(self):
-        return "mmsi:{},mark:{},imo:{},vessel_name:{},vessel_type:{},length:{},width:{},longtitude:{},latitude:{}," \
-               "draft:{},speed:{},date:{},utc:{}".format(self.mmsi, self.mark, self.imo, self.vessel_name,
-                                                         self.vessel_type, self.length, self.width, self.longitude,
-                                                         self.latitude, self.draft, self.speed, self.date, self.utc)
+        return ("mmsi:{},mark:{},imo:{},vessel_name:{},vessel_type:{},length:{},width:{},country:{},longtitude:{},"
+                "latitude:{},draft:{},speed:{},date:{},utc:{}".
+                format(self.mmsi, self.mark, self.imo, self.vessel_name, self.vessel_type, self.length, self.width,
+                       self.longitude, self.latitude, self.draft, self.speed, self.date, self.utc))
 
     def get_average_speed_between(self, another_ship, distance_threshold):
         distance = 6378.138 * 2 * math.asin(math.sqrt(

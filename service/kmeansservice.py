@@ -47,11 +47,11 @@ class KmeansService(object):
 
 if __name__ == '__main__':
     data_list = [
-        Draft('aaa', 5, 3),
-        Draft('aaa', 7, 3),
-        Draft('aaa', 3, 5),
-        Draft('aaa', 1, 4),
-        Draft('aaa', 8, 1),
+        Draft('aaa', 2, 5, 3),
+        Draft('aaa', 2, 7, 3),
+        Draft('aaa', 2, 3, 5),
+        Draft('aaa', 2, 1, 4),
+        Draft('aaa', 2, 8, 1),
     ]
 
     kmeans_service = KmeansService(data_list, 'draft', 'count', 'load_state')

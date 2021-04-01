@@ -15,14 +15,19 @@ TODO check the doing things!
 """
 
 
-def get_oil_tanker(source_path, source_table, target_db, ais_table, ais_rol_list, create_table=True,
-                   is_need_cleaning=False, clean_speed_threshold=0, clean_draft_threshold=0):
+def get_total_year_oil_tanker():
+    pass
+
+
+def get_single_year_oil_tanker(source_path, source_table, target_db, ais_table, ais_rol_list, create_table=True,
+                               is_need_cleaning=False, clean_speed_threshold=0, clean_draft_threshold=0):
     Utils.check_file_path(target_db)
 
     ais = AISService(target_db)
 
     # 数据导入
-    ais.import_data_from_path(source_path, source_table, ais_table, ais_rol_list, create_table=create_table)
+    ais.import_data_from_path(source_path, source_table, ais_table, ais_rol_list, create_table=create_table,
+                              filter_query="WHERE Vessel_type_sub='Crude Oil Tanker'")
 
     # 数据清理
     if is_need_cleaning:
@@ -47,5 +52,5 @@ if __name__ == '__main__':
     clean_draft_threshold = 100
     create_table = False
 
-    get_oil_tanker(source_path, source_table, target_db, ais_table, ais_rol_list, create_table, is_need_cleaning,
-                   clean_speed_threshold, clean_draft_threshold)
+    get_single_year_oil_tanker(source_path, source_table, target_db, ais_table, ais_rol_list, create_table,
+                               is_need_cleaning, clean_speed_threshold, clean_draft_threshold)

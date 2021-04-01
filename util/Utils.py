@@ -308,7 +308,7 @@ class Utils(object):
     @staticmethod
     def convert_utc_to_str_time(utc):
         if len(str(utc)) == 14:
-            return
+            return utc
 
         time_local = time.localtime(int(utc))
         return time.strftime("%Y%m%d%H%M%S", time_local)

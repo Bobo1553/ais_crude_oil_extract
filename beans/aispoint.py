@@ -11,8 +11,7 @@ from util.Utils import Utils
 class AISPoint(object):
 
     def __init__(self, mmsi, imo, vessel_name, vessel_type, length, width, country, longitude, latitude, draft, speed,
-                 str_time,
-                 mark=0):
+                 str_time, mark=0):
         self.mmsi = mmsi
         self.mark = mark
         self.imo = imo

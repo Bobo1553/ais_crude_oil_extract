@@ -55,20 +55,20 @@ class AISService(object):
 
     # region 数据获取
     def start_fetch_data_transaction(self, source_table):
-        self.ais_db.run_sql("SELECT mmsi, mark, imo, vessel_name, vessel_type, length, width, longitude, latitude, "
-                            "draft, speed, utc FROM {} WHERE mmsi = 215153000 ORDER BY mmsi, mark, utc".format(
-            source_table))
+        self.ais_db.run_sql("SELECT mmsi, mark, imo, vessel_name, vessel_type, length, width, country, longitude, "
+                            "latitude, draft, speed, utc FROM {} ORDER BY mmsi, mark, utc".
+                            format(source_table))
         row = self.ais_db.db_cursor.next()
-        self.ais_point = AISPoint(row[0], row[2], row[3], row[4], row[5], row[6], row[7], row[8], float(row[9]),
-                                  row[10], row[11], row[1])
+        self.ais_point = AISPoint(row[0], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10],
+                                  row[11], row[12], row[1])
         return self.ais_point
 
     def start_fetch_original_data_transaction(self, source_table):
         self.ais_db.run_sql("SELECT mmsi, imo, vessel_name, vessel_type_sub, length, width, flag_country, longitude, "
                             "latitude, draft, speed, utc FROM {} ORDER BY mmsi, utc ".format(source_table))
         row = self.ais_db.db_cursor.next()
-        self.ais_point = AISPoint(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], float(row[9]),
-                                  row[10])
+        self.ais_point = AISPoint(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9],
+                                  row[10], row[11])
         return self.ais_point
 
     def has_next_ais_ship(self):
@@ -87,8 +87,8 @@ class AISService(object):
         outliers_count = 0
 
         for row in self.ais_db.db_cursor:
-            after_ship = AISPoint(row[0], row[2], row[3], row[4], row[5], row[6], row[7], row[8], float(row[9]),
-                                  row[10], row[11], row[1])
+            after_ship = AISPoint(row[0], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10],
+                                  row[11], row[12], row[1])
             if is_line_head:
                 before_ship, after_ship = self.line_head_outliers_detection(
                     before_ship, after_ship, outliers_distance_threshold, outliers_speed_threshold)
@@ -130,9 +130,8 @@ class AISService(object):
 
     def skip_useless_trajectory(self):
         for row in self.ais_db.db_cursor:
-            after_ship = AISPoint(row[0], row[2], row[3], row[4], row[5], row[6], row[7], row[8], float(row[9]),
-                                  row[10],
-                                  row[11], row[1])
+            after_ship = AISPoint(row[0], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10],
+                                  row[11], row[12], row[1])
             if not after_ship.is_same_ship(self.ais_point):
                 self.ais_point = after_ship
                 return
@@ -168,8 +167,8 @@ class AISService(object):
             return before_ship, after_ship
         row = next(self.ais_db.db_cursor)
         middle_ship = after_ship
-        after_ship = AISPoint(row[0], row[2], row[3], row[4], row[5], row[6], row[7], row[8], float(row[9]), row[10],
-                              row[11], row[1])
+        after_ship = AISPoint(row[0], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9], row[10], row[11],
+                              row[12], row[1])
         if AISService.is_outliers(middle_ship, after_ship, outliers_distance_threshold, outliers_speed_threshold):
             return before_ship, after_ship
         else:
@@ -182,7 +181,7 @@ class AISService(object):
 
         for row in self.ais_db.db_cursor:
             after_ship = AISPoint(row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8], row[9],
-                                  row[10])
+                                  row[10], row[11])
 
             if after_ship.is_same_ship(before_ship):
                 self.sequentially_identify(after_ship, sequentially, speed_threshold, distance_threshold)

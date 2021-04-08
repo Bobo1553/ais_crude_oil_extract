@@ -3,7 +3,6 @@
 Create on 2021/1/13 15:01
 @author: Xiao Yijia
 """
-from abc import abstractmethod
 
 
 class SingleLineTransaction(object):

@@ -150,16 +150,18 @@ class AISService(object):
             return
 
         first_point = ais_points[0]
-        source_port = port_service.get_nearest_port(
+        source_port, source_distance = port_service.get_nearest_port(
             arcpy.PointGeometry(arcpy.Point(first_point.longitude, first_point.latitude)),
             distance_threshold)
 
         last_point = ais_points[-1]
-        target_port = port_service.get_nearest_port(
+        target_port, target_distance = port_service.get_nearest_port(
             arcpy.PointGeometry(arcpy.Point(last_point.longitude, last_point.latitude)),
             distance_threshold)
 
-        Utils.export_to_csv(ais_points, csv_writer, [source_port.name, target_port.name, load_state, line_index])
+        Utils.export_to_csv(ais_points, csv_writer,
+                            [source_port.name, source_distance, target_port.name, target_distance, load_state,
+                             line_index])
 
     def line_head_outliers_detection(self, before_ship, after_ship, outliers_distance_threshold,
                                      outliers_speed_threshold):

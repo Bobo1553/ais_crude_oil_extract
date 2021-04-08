@@ -25,7 +25,7 @@ class PortService(object):
                 min_distance = distance
                 nearest_port = port
 
-        return nearest_port
+        return nearest_port, min_distance
 
     def get_port_by_name(self, name):
         return self.ports[name]

@@ -213,17 +213,17 @@ def add_vessel_type_info(source_csv_name, target_csv_name, addition_info_source_
 
 
 if __name__ == '__main__':
-    target_db = r"D:\graduation\data\step_result\total\step2\OilTanker.db"
-    draft_db = r"D:\graduation\data\step_result\total\step3\TankerDraft.db"
+    target_db = r"D:\graduation\data\step_result\step2\CrudeOilTanker.db"
+    draft_db = r"D:\graduation\data\step_result\step3\TankerDraft.db"
     draft_state_table = "TankerDraftState"
-    ais_table = "OilTanker"
-    port_name = r"D:\GeoData\Port\WPI.shp"
+    ais_table = "CrudeOilTanker"
+    port_name = r"D:\graduation\data\collection_data\graduation.gdb\world_port"
     # trajectory_output_file = r"D:\graduation\data\step_result\check\step4\trajectory_{}.csv".format(215153000)
-    trajectory_output_file = r"D:\graduation\data\step_result\total\step4\trajectory.csv"
-    outliers_output_file = r"D:\graduation\data\step_result\check\step4\outliers.csv"
-    trajectory_output_header = ["mmsi", "mark", "imo", "vessel_name", "vessel_type", "length", "width", "longitude",
-                                "latitude", "draft", "speed", "date", "utc", "source_port", "target_port", "load_state",
-                                "line_index"]
+    trajectory_output_file = r"D:\graduation\data\step_result\step4\trajectory.csv"
+    outliers_output_file = r"D:\graduation\data\step_result\step4\check\outliers.csv"
+    trajectory_output_header = ["mmsi", "mark", "imo", "vessel_name", "vessel_type", "length", "width", "country",
+                                "longitude", "latitude", "draft", "speed", "date", "utc", "source_port",
+                                "source_distance", "target_port", "target_distance", "load_state", "line_index"]
 
     search_distance = 1000
     trajectory_distance_threshold = 3.4
@@ -239,16 +239,16 @@ if __name__ == '__main__':
     trajectory_output_with_vessel_type = r"D:\graduation\data\step_result\total\step4\trajectory_with_type.csv"
     source_db = r"D:\graduation\data\step_result\total\step1\OilTankerTemp.db"
 
-    # check_file(trajectory_output_with_vessel_type)
+    check_file(trajectory_output_file)
 
     # add_vessel_type_info(trajectory_output_file, trajectory_output_with_vessel_type, source_db)
 
-    header = ['line_index', 'mmsi', 'mark', 'imo', 'vessel_name', 'vessel_type', 'length', 'width', 'deadweight',
-              'start_time', 'arrive_time', 'source_port', 'target_port', 'load_state', 'input_or_output']
-    static_info_file_for_analysis = r"D:\graduation\data\step_result\total\step4\trajectory_info.csv"
-    deadweight_db = r"D:\graduation\data\OilTankerWithDeadWeight.db"
-    deadweight_table = "OilTankerFiles"
-    port_shp_file = "D:\GeoData\Port\WPI.shp"
-    get_trajectory_info(trajectory_output_with_vessel_type, header, static_info_file_for_analysis, deadweight_db,
-                        deadweight_table, port_shp_file)
+    # header = ['line_index', 'mmsi', 'mark', 'imo', 'vessel_name', 'vessel_type', 'length', 'width', 'deadweight',
+    #           'start_time', 'arrive_time', 'source_port', 'target_port', 'load_state', 'input_or_output']
+    # static_info_file_for_analysis = r"D:\graduation\data\step_result\total\step4\trajectory_info.csv"
+    # deadweight_db = r"D:\graduation\data\OilTankerWithDeadWeight.db"
+    # deadweight_table = "OilTankerFiles"
+    # port_shp_file = "D:\GeoData\Port\WPI.shp"
+    # get_trajectory_info(trajectory_output_with_vessel_type, header, static_info_file_for_analysis, deadweight_db,
+    #                     deadweight_table, port_shp_file)
     # check_file(static_info_file_for_analysis)

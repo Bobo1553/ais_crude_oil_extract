@@ -38,10 +38,10 @@ class AISPoint(object):
         return self.mmsi == another_ship_point.mmsi and self.mark == another_ship_point.mark
 
     def __str__(self):
-        return ("mmsi:{},mark:{},imo:{},vessel_name:{},vessel_type:{},length:{},width:{},country:{},longtitude:{},"
+        return ("mmsi:{},mark:{},imo:{},vessel_name:{},vessel_type:{},length:{},width:{},country:{},longitude:{},"
                 "latitude:{},draft:{},speed:{},date:{},utc:{}".
                 format(self.mmsi, self.mark, self.imo, self.vessel_name, self.vessel_type, self.length, self.width,
-                       self.longitude, self.latitude, self.draft, self.speed, self.date, self.utc))
+                       self.country, self.longitude, self.latitude, self.draft, self.speed, self.date, self.utc))
 
     def get_average_speed_between(self, another_ship, distance_threshold):
         distance = 6378.138 * 2 * math.asin(math.sqrt(

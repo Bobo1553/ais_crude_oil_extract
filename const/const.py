@@ -21,5 +21,7 @@ class Const:
 
     LINE_NO_SPLIT_DEGREE = 361
 
+    CHINA_PORT = []
+
     def __init__(self):
         pass

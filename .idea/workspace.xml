@@ -6,17 +6,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7737b1d2-d4ff-45e3-b119-56555ae4fe98" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/analysis/OilCommunities.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/OilNetAnalysis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/PortCluster.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/TimeSequence.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/aisprocess.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aisprocess.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/const/const.py" beforeDir="false" afterPath="$PROJECT_DIR$/const/const.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/step6.py" beforeDir="false" afterPath="$PROJECT_DIR$/step/save_step6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step/step_5.py" beforeDir="false" afterPath="$PROJECT_DIR$/step/step5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/OilCommunities.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/OilCommunities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/OilNetAnalysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/OilNetAnalysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support.py" beforeDir="false" afterPath="$PROJECT_DIR$/support.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,7 +22,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/code$draft.coverage" NAME="draft Coverage Results" MODIFIED="1603531295642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/service" />
-    <SUITE FILE_PATH="coverage/code$support.coverage" NAME="support Coverage Results" MODIFIED="1606891906662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/code$support.coverage" NAME="support Coverage Results" MODIFIED="1619960364809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$TrajectoryReturnTime.coverage" NAME="TrajectoryReturnTime Coverage Results" MODIFIED="1610639058475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis" />
     <SUITE FILE_PATH="coverage/code$draft__1_.coverage" NAME="draft (1) Coverage Results" MODIFIED="1603552249148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/service" />
     <SUITE FILE_PATH="coverage/code$main.coverage" NAME="main Coverage Results" MODIFIED="1604482128644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -44,14 +39,14 @@
     <SUITE FILE_PATH="coverage/code$TrajectoryUseTime.coverage" NAME="TrajectoryUseTime Coverage Results" MODIFIED="1610638970099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis" />
     <SUITE FILE_PATH="coverage/code$step5.coverage" NAME="step5 Coverage Results" MODIFIED="1618939988040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/step" />
     <SUITE FILE_PATH="coverage/code$commondb.coverage" NAME="commondb Coverage Results" MODIFIED="1607873046819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dao" />
-    <SUITE FILE_PATH="coverage/code$OilNetAnalysis.coverage" NAME="OilNetAnalysis Coverage Results" MODIFIED="1618295294668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis" />
+    <SUITE FILE_PATH="coverage/code$OilNetAnalysis.coverage" NAME="OilNetAnalysis Coverage Results" MODIFIED="1619234275063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis" />
     <SUITE FILE_PATH="coverage/code$step2.coverage" NAME="step2 Coverage Results" MODIFIED="1617258024911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/step" />
     <SUITE FILE_PATH="coverage/code$TimeSequence.coverage" NAME="TimeSequence Coverage Results" MODIFIED="1618055939354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis" />
     <SUITE FILE_PATH="coverage/code$draftdb.coverage" NAME="draftdb Coverage Results" MODIFIED="1603608948271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dao" />
     <SUITE FILE_PATH="coverage/code$SankeyFigure.coverage" NAME="SankeyFigure Coverage Results" MODIFIED="1607997476485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/echarts" />
     <SUITE FILE_PATH="coverage/code$draft__2_.coverage" NAME="draft (2) Coverage Results" MODIFIED="1603609471540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/service" />
     <SUITE FILE_PATH="coverage/code$BarFigure.coverage" NAME="BarFigure Coverage Results" MODIFIED="1608047424178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/echarts" />
-    <SUITE FILE_PATH="coverage/code$OilCommunities.coverage" NAME="OilCommunities Coverage Results" MODIFIED="1618954059285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis" />
+    <SUITE FILE_PATH="coverage/code$OilCommunities.coverage" NAME="OilCommunities Coverage Results" MODIFIED="1619232145717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/analysis" />
     <SUITE FILE_PATH="coverage/code$draftdb__1_.coverage" NAME="draftdb (1) Coverage Results" MODIFIED="1603954340145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/service" />
     <SUITE FILE_PATH="coverage/code$step3.coverage" NAME="step3 Coverage Results" MODIFIED="1605878106629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/step" />
     <SUITE FILE_PATH="coverage/code$ConstColor.coverage" NAME="ConstColor Coverage Results" MODIFIED="1608046180871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/const" />
@@ -86,23 +81,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="step4.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/step/step4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="242" selection-start-line="242" selection-end-line="242" />
-              <folding>
-                <element signature="e#78#88#0" expanded="true" />
-                <element signature="e#2560#3152#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
+            <state relative-caret-position="969">
               <caret line="51" column="24" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="24" />
             </state>
           </provider>
@@ -111,7 +93,7 @@
       <file leaf-file-name="step5.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/step/step5.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1737">
+            <state relative-caret-position="3059">
               <caret line="167" selection-start-line="167" selection-end-line="167" />
               <folding>
                 <element signature="e#78#88#0" expanded="true" />
@@ -120,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OilCommunities.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OilCommunities.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/analysis/OilCommunities.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="200" lean-forward="true" selection-start-line="200" selection-end-line="200" />
+            <state relative-caret-position="-3344">
+              <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
               <folding>
                 <element signature="e#78#88#0" expanded="true" />
               </folding>
@@ -132,20 +114,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BetweenLineTransaction.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/basemodel/BetweenLineTransaction.py">
+      <file leaf-file-name="step2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/step/step2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            <state relative-caret-position="2603">
+              <caret line="140" selection-start-line="140" selection-end-line="140" />
+              <folding>
+                <element signature="e#78#88#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrajectoryReturnTime.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/analysis/TrajectoryReturnTime.py">
+      <file leaf-file-name="step1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/step/step1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+            <state relative-caret-position="1026">
+              <caret line="55" column="48" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OilNetAnalysis.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/analysis/OilNetAnalysis.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1273">
+              <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
+              <folding>
+                <element signature="e#78#99#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="support.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/support.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="120" column="56" lean-forward="true" selection-start-line="120" selection-start-column="56" selection-end-line="120" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commondb.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dao/commondb.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="665">
+              <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -153,7 +168,7 @@
       <file leaf-file-name="PortCluster.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/analysis/PortCluster.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
+            <state relative-caret-position="323">
               <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
               <folding>
                 <element signature="e#79#113#0" expanded="true" />
@@ -162,32 +177,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="const.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/const/const.py">
+      <file leaf-file-name="graph.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/Software/Anaconda/anaconda/Lib/site-packages/networkx/classes/graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="clustering.py" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Software/Anaconda/anaconda/Lib/site-packages/igraph/clustering.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="410" column="8" selection-start-line="410" selection-start-column="8" selection-end-line="410" selection-end-column="8" />
-              <folding>
-                <element signature="e#7904#9299#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Software/Anaconda/anaconda/Lib/site-packages/igraph/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-819">
-              <caret line="230" column="35" selection-start-line="230" selection-start-column="35" selection-end-line="230" selection-end-column="35" />
+            <state relative-caret-position="266">
+              <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -203,7 +197,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>leg</find>
       <find>A</find>
       <find>legend</find>
       <find>source_nodes</find>
@@ -232,7 +225,8 @@
       <find>Read_Ncol</find>
       <find>Ver</find>
       <find>class</find>
-      <find>class</find>
+      <find>info</find>
+      <find>1231</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -243,7 +237,6 @@
       <list>
         <option value="$PROJECT_DIR$/config/support_config.yml" />
         <option value="$APPLICATION_HOME_DIR$/helpers/pycharm_matplotlib_backend/backend_interagg.py" />
-        <option value="$PROJECT_DIR$/support.py" />
         <option value="$PROJECT_DIR$/step/analysis.py" />
         <option value="$PROJECT_DIR$/echarts.py" />
         <option value="$PROJECT_DIR$/echarts/env_test.py" />
@@ -263,7 +256,6 @@
         <option value="$PROJECT_DIR$/service/draftdb.py" />
         <option value="$PROJECT_DIR$/step/step7.py" />
         <option value="$PROJECT_DIR$/analysis/TrajectoryRetrunTime.py" />
-        <option value="$PROJECT_DIR$/dao/commondb.py" />
         <option value="$PROJECT_DIR$/const/ConstSQL.py" />
         <option value="$PROJECT_DIR$/analysis/TrajectoryRelaxTime.py" />
         <option value="$PROJECT_DIR$/analysis/TrajectoryTime.py" />
@@ -285,13 +277,15 @@
         <option value="$PROJECT_DIR$/step/step_5.py" />
         <option value="$PROJECT_DIR$/analysis/TimeSequence.py" />
         <option value="$PROJECT_DIR$/analysis/NetAnalysis.py" />
-        <option value="$PROJECT_DIR$/analysis/OilNetAnalysis.py" />
         <option value="$PROJECT_DIR$/step/step6.py" />
         <option value="$PROJECT_DIR$/const/const.py" />
         <option value="$PROJECT_DIR$/analysis/PortCluster.py" />
         <option value="$PROJECT_DIR$/step/step5.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/analysis/OilCommunities.py" />
+        <option value="$PROJECT_DIR$/analysis/OilNetAnalysis.py" />
+        <option value="$PROJECT_DIR$/dao/commondb.py" />
+        <option value="$PROJECT_DIR$/support.py" />
       </list>
     </option>
   </component>
@@ -305,10 +299,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="122" />
-    <option name="y" value="-10" />
-    <option name="width" value="1549" />
-    <option name="height" value="725" />
+    <option name="x" value="411" />
+    <option name="y" value="-8" />
+    <option name="width" value="1347" />
+    <option name="height" value="724" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -316,6 +310,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -361,12 +356,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/WeChat Files/wxid_m9bily0ph0mi22/FileStorage/File/2021-04/data_format-master" />
+    <property name="last_opened_file_path" value="D:/课程/陆瑶/论文/code" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -396,7 +390,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.support">
     <configuration name="OilCommunities" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="aisprocess" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -416,7 +410,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="PortCluster" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="OilNetAnalysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="aisprocess" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -429,26 +423,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analysis/PortCluster.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="step4" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="aisprocess" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/step" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/step/step4.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analysis/OilNetAnalysis.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -468,6 +443,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/step/step5.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="support" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="aisprocess" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/support.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -494,18 +488,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.step5" />
-      <item itemvalue="Python.step4" />
       <item itemvalue="Python.OilCommunities" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.PortCluster" />
+      <item itemvalue="Python.OilNetAnalysis" />
+      <item itemvalue="Python.support" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
+        <item itemvalue="Python.support" />
+        <item itemvalue="Python.OilNetAnalysis" />
         <item itemvalue="Python.OilCommunities" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.step5" />
-        <item itemvalue="Python.PortCluster" />
-        <item itemvalue="Python.step4" />
       </list>
     </recent_temporary>
   </component>
@@ -541,7 +535,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617886117000</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="增加了社区检测的方法">
+      <created>1619182248440</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1619182248440</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -562,14 +563,14 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3281027" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32905984" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.28462377" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.35114503" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32763532" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.76981705" visible="true" weight="0.1380597" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.76806724" visible="true" weight="0.17537314" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" weight="0.32995737" />
       <window_info anchor="right" id="SciView" order="3" weight="0.29317698" />
       <window_info id="Structure" order="1" sideWeight="0.50217706" side_tool="true" weight="0.19029851" />
-      <window_info id="Favorites" order="2" sideWeight="0.23018293" side_tool="true" visible="true" weight="0.1380597" />
+      <window_info id="Favorites" order="2" sideWeight="0.23193277" side_tool="true" visible="true" weight="0.17537314" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.6462197" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -600,7 +601,8 @@
     <MESSAGE value="给aispoint的添加了country属性" />
     <MESSAGE value="修复AISService中的aispoint数据初始化问题" />
     <MESSAGE value="增加了航次划分结果的异常检测和剔除，补充提取国家原油进出口运量的方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加了航次划分结果的异常检测和剔除，补充提取国家原油进出口运量的方法" />
+    <MESSAGE value="增加了社区检测的方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加了社区检测的方法" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -702,20 +704,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_environment.py" />
-    <entry file="file://$PROJECT_DIR$/dao/commondb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1235">
-          <caret line="69" column="20" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/step/step1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="55" column="48" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/beans/draft.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
@@ -727,13 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="872">
           <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/support.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-50">
-          <caret line="96" column="24" lean-forward="true" selection-start-line="96" selection-start-column="24" selection-end-line="96" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -776,9 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2014">
           <caret line="112" column="50" selection-start-line="112" selection-start-column="50" selection-end-line="112" selection-end-column="50" />
-          <folding>
-            <element signature="e#79#91#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -793,13 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/step/step2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
         </state>
       </provider>
     </entry>
@@ -835,16 +806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-126">
           <caret line="15" column="80" selection-start-line="15" selection-start-column="80" selection-end-line="15" selection-end-column="80" />
-          <folding>
-            <element signature="e#77#87#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Software/Anaconda/anaconda/Lib/site-packages/networkx/classes/graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17784">
-          <caret line="942" column="8" selection-start-line="942" selection-start-column="8" selection-end-line="942" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -877,13 +838,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/step/step6.py" />
-    <entry file="file://$PROJECT_DIR$/analysis/OilNetAnalysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Software/Anaconda/anaconda/Lib/site-packages/igraph/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-819">
@@ -895,9 +849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="410" column="8" selection-start-line="410" selection-start-column="8" selection-end-line="410" selection-end-column="8" />
-          <folding>
-            <element signature="e#7904#9299#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -905,16 +856,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/analysis/PortCluster.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-          <folding>
-            <element signature="e#79#113#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -943,9 +884,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="51" column="24" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/PortCluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding>
+            <element signature="e#79#113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Software/Anaconda/anaconda/Lib/site-packages/networkx/classes/graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/step/step5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1737">
+        <state relative-caret-position="3059">
           <caret line="167" selection-start-line="167" selection-end-line="167" />
           <folding>
             <element signature="e#78#88#0" expanded="true" />
@@ -953,20 +918,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/step/step1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="51" column="24" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="24" />
+        <state relative-caret-position="1026">
+          <caret line="55" column="48" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step/step2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2603">
+          <caret line="140" selection-start-line="140" selection-end-line="140" />
+          <folding>
+            <element signature="e#78#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/OilNetAnalysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1273">
+          <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
+          <folding>
+            <element signature="e#78#99#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/commondb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/analysis/OilCommunities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="200" lean-forward="true" selection-start-line="200" selection-end-line="200" />
+        <state relative-caret-position="-3344">
+          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
           <folding>
             <element signature="e#78#88#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/support.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="120" column="56" lean-forward="true" selection-start-line="120" selection-start-column="56" selection-end-line="120" selection-end-column="56" />
         </state>
       </provider>
     </entry>

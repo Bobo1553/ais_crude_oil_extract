@@ -31,7 +31,7 @@ def get_record_count(source_path, source_table, target_db_name, target_table, ta
             original_day_count = db.get_count(source_table)
             original_count += original_day_count
             tanker_day_count = db.get_count(source_table,
-                                            filter_list=["Vessel_type_main = 'Oil And Chemical Tanker'"],
+                                            filter_list=["Vessel_type_sub = 'Crude Oil Tanker'"],
                                             connect_word=Const.OR_CONNECT_WORD)
             tanker_count += tanker_day_count
             target_db.db_file.execute("INSERT INTO {} VALUES (?,?,?)".format(target_table),
@@ -45,16 +45,16 @@ def get_record_count(source_path, source_table, target_db_name, target_table, ta
 def get_ship_count(source_path, source_table, target_db, ship_table, ship_rol_list, ):
     db = CommonDB(target_db)
 
-    sql = "INSERT INTO {} SELECT DISTINCT MMSI, Vessel_type_main FROM {}".format(ship_table, source_table)
+    sql = "INSERT INTO {} SELECT DISTINCT MMSI, Vessel_type_sub FROM {}".format(ship_table, source_table)
 
-    db.import_data_from_path(source_path, ship_table, ship_rol_list, sql)
+    db.import_data_from_path(source_path, ship_table, ship_rol_list, sql, )
 
     db.run_sql("SELECT COUNT(DISTINCT MMSI) FROM {}".format(ship_table))
     original_ship = db.db_cursor.next()[0]
 
     print("original_ship:" + str(original_ship))
 
-    db.run_sql("SELECT COUNT(DISTINCT MMSI) FROM {} WHERE Vessel_type = 'Oil And Chemical Tanker'".format(
+    db.run_sql("SELECT COUNT(DISTINCT MMSI) FROM {} WHERE Vessel_type = 'Crude Oil Tanker'".format(
         ship_table))
     tanker_ship = db.db_cursor.next()[0]
 
@@ -108,21 +108,21 @@ def get_all_ship_country(source_db, mmsi_db, csv_name):
 
 if __name__ == '__main__':
     # SupportConfig.parse_from_file("config/support_config.yml")
-    source_path = r'H:\NewShipsDB2014'
+    source_path = r'G:\NewShipsDB2015'
     source_table = 'Tracks'
-    target_db_name = r'D:\graduation\data\step_result\total\support\support.db'
-    target_table = 'RecordCount2014'
+    target_db_name = r'D:\graduation\data\step_result\support\support.db'
+    target_table = 'RecordCount2015'
     target_table_rol_list = ["date TEXT", "original_count INTEGER", "tanker_count INTEGER"]
 
-    # get_record_count(source_path, source_table, target_db_name, target_table, target_table_rol_list)
+    get_record_count(source_path, source_table, target_db_name, target_table, target_table_rol_list)
 
-    # target_db = r'D:\graduation\data\step_result\total\support\support.db'
-    # ship_table = 'MMSIShip2015'
-    # ship_rol_list = ['mmsi INTEGER', 'vessel_type TEXT']
-    # get_ship_count(source_path, source_table, target_db, ship_table, ship_rol_list, )
+    target_db = r'D:\graduation\data\step_result\support\support.db'
+    ship_table = 'MMSIShip2015 '
+    ship_rol_list = ['mmsi INTEGER', 'vessel_type TEXT']
+    get_ship_count(source_path, source_table, target_db, ship_table, ship_rol_list, )
     # show_file_content(r"D:\graduation\data\result\china_trajectory.csv")
 
     # get_use_time(r"D:\graduation\data\step_result\total\step7\trajectory.db", r"D:\graduation\data\step_result\total\step7\use_time.csv")
 
-    get_all_ship_country(r"D:\graduation\data\step_result\total\step1\OilTankerTemp.db",
-                         r"D:\graduation\data\step_result\total\step7\trajectory.db", r"D:\test.csv")
+    # get_all_ship_country(r"D:\graduation\data\step_result\total\step1\OilTankerTemp.db",
+    #                      r"D:\graduation\data\step_result\total\step7\trajectory.db", r"D:\test.csv")

@@ -105,6 +105,7 @@ def combine_centrality(centrality_files_name, save_file_name, save_header):
 
 
 def export_cluster_result(g, clust, output_file_name):
+
     print(output_file_name)
     with open(output_file_name, "w", newline="") as all_file:
         all_writer = csv.writer(all_file)
@@ -115,6 +116,8 @@ def export_cluster_result(g, clust, output_file_name):
             china_writer.writerow(["modularity", clust.modularity])
             china_writer.writerow(["port_name", "idx"])
             for idx, c in enumerate(clust):
+                sub_graph = clust.subgraph(idx)
+                print("{}:{}".format(idx))
                 for port_name in g.vs[c]["name"]:
                     all_writer.writerow([port_name, idx])
                     if port_name in CHINA_PORT:
@@ -214,18 +217,27 @@ def correct_file(source_file_name, output_file_name):
 
 
 if __name__ == '__main__':
-    # correct_file(r"D:\graduation\data\analysis\chapter5\ship\undirected-centrality\all_closeness_w.csv",
-    #              r"D:\graduation\data\analysis\chapter5\ship\undirected-centrality\all_closeness_w_correct.csv")
-
-    china_port_file_name = r"D:\graduation\data\analysis\chapter5\network\china_port_code.csv"
+    # correct_file(r"D:\graduation\data\analysis\chapter5\ship\undirected-centrality\country_closeness_w.csv",
+    #              r"D:\graduation\data\analysis\chapter5\ship\undirected-centrality\country_closeness_w_correct.csv")
+    china_port_file_name = r"D:\graduation\data\analysis\chapter5\ship\china_port_code.csv"
     init_china_port(china_port_file_name)
 
-    in_degree_file_name = r"D:\graduation\data\analysis\chapter5\ship\undirected-centrality\all_degree_w_in.csv"
-    out_degree_file_name = r"D:\graduation\data\analysis\chapter5\ship\undirected-centrality\all_degree_w_out.csv"
-    betweenness_file_name = r"D:\graduation\data\analysis\chapter5\ship\undirected-centrality\all_betweenness_w.csv"
-    closeness_file_name = r"D:\graduation\data\analysis\chapter5\ship\undirected-centrality\all_closeness_w_correct.csv"
+    in_degree_file_name = r"D:\graduation\data\analysis\chapter5\ship\undirected-centrality\country_degree_w_in.csv"
+    out_degree_file_name = r"D:\graduation\data\analysis\chapter5\ship\undirected-centrality\country_degree_w_out.csv"
+    betweenness_file_name = r"D:\graduation\data\analysis\chapter5\ship\undirected-centrality\country_betweenness_w.csv"
+    closeness_file_name = r"D:\graduation\data\analysis\chapter5\ship\undirected-centrality\country_closeness_w_correct.csv"
     centrality_files_name = [in_degree_file_name, out_degree_file_name, betweenness_file_name, closeness_file_name]
-    save_file_name = r"D:\graduation\data\analysis\chapter5\ship\undirected-centrality\all_centrality.csv"
+    save_file_name = r"D:\graduation\data\analysis\chapter5\ship\undirected-centrality\country_centrality.csv"
     save_header = ["code", "port", "in_degree", "in_output", "out_degree", "out_output", "betweenness", "closeness",
                    "n_closeness"]
     combine_centrality(centrality_files_name, save_file_name, save_header)
+
+    # # parameter
+    # # source_port_oil = r"D:\graduation\data\analysis\chapter5\network\port_oil.csv"
+    # source_port_oil = r"D:\graduation\data\analysis\chapter5\ship\china-other\ship_count.csv"
+    # # communities_result = r"D:\graduation\data\analysis\chapter5\network\communities_result_test.csv"
+    # # steps = 4
+    # communities_path = r"D:\graduation\data\analysis\chapter5\ship\china-other\undirected"
+    # directed = False
+    # all_communities_cluster(source_port_oil, communities_path, directed)
+    # # communities_cluster(source_port_oil, communities_result, steps)
